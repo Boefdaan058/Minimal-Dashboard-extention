@@ -4,7 +4,7 @@
   "version": "1.0",
   "permissions": ["storage"],
   "chrome_url_overrides": {
-    "newtab": "homepage.html"
+    "newtab": "index.html"
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
