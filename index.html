@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/icons/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <button id="settingsBtn">⚙️ Settings</button>
+  <div id="settingsDropdown" class="dropdown">
+    <div class="dropdown-section">
+      <strong>Background</strong><br>
+      <input id="color1" type="color">
+      <input id="color2" type="color">
+      <button id="setBgBtn">Set Background</button>
+    </div>
+    <div class="dropdown-section">
+      <strong>Bookmarks</strong><br>
+      <input type="text" id="siteLabel" placeholder="Label">
+      <input type="url" id="siteUrl" placeholder="URL">
+      <button id="addBookmarkBtn">Add</button>
+      <div id="bookmarkList"></div>
+    </div>
+    <hr>
+    <div class="dropdown-section">
+      <strong>Theme</strong><br>
+      <button id="themeBtn">Toggle Light/Dark Mode</button>
+    </div>
+    <hr>
+    <div class="dropdown-section">
+      <strong>Bookmarks View</strong><br>
+      <button id="bookmarkIconBtn">Icon Only</button>
+    </div>
+  </div>
+  <div id="container">
+    <header>
+      <h1>Welcome!</h1>
+      <p id="clock"></p>
+      <div id="quoteBox">
+        <p id="quote"></p>
+      </div>
+    </header>
+    <section>
+      <h2>Bookmarks</h2>
+      <div id="bookmarks"></div>
+    </section>
+    <section>
+      <h2>Pomodoro</h2>
+      <div id="timer"></div>
+      <button id="startPomodoroBtn">Start</button>
+      <button id="resetPomodoroBtn">Reset</button>
+    </section>
+  </div>
+  <script src="anime.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
